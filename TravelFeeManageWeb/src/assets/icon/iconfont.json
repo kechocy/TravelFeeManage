@@ -1,0 +1,16 @@
+{
+  "id": "",
+  "name": "",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "1790499",
+      "name": "货币",
+      "font_class": "huobi",
+      "unicode": "e6fb",
+      "unicode_decimal": 59131
+    }
+  ]
+}

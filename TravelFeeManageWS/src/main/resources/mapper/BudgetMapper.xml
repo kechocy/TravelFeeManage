@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.travelfeemanagews.mapper.BudgetMapper">
+
+    <select id="isExistById" parameterType="Integer" resultType="java.lang.Boolean">
+        select count(0) from budget where id = #{id};
+    </select>
+
+    <insert id="addBudget" parameterType="com.example.travelfeemanagews.entity.Budget">
+        insert into Budget(traffic,food,accommodation,play,shopping,other,total,userid) values (#{traffic},#{food},#{accommodation},#{play},#{shopping},#{other},#{total},#{userid});
+    </insert>
+
+    <select id="getBudgetByUserid" parameterType="Integer" resultType="com.example.travelfeemanagews.entity.Budget">
+        select * from budget where userid = #{userid};
+    </select>
+</mapper>

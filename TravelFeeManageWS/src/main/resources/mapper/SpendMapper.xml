@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.travelfeemanagews.mapper.SpendMapper">
+
+    <resultMap type="com.example.travelfeemanagews.entity.Spend" id="spendResultMap">
+        <id property="id" column="id"/>
+        <result property="matter" column="matter"/>
+        <result property="spend" column="spend"/>
+        <result property="budgetid" column="budgetid"/>
+    </resultMap>
+
+    <insert id="addSpendItem" parameterType="com.example.travelfeemanagews.entity.Spend">
+        insert into spend(matter, spend, budgetid) values (#{matter},#{spend},#{budgetid});
+    </insert>
+
+    <select id="getSpendByBudgetid" parameterType="Integer" resultMap="spendResultMap">
+        select * from spend where budgetid = #{budgetid};
+    </select>
+
+</mapper>
