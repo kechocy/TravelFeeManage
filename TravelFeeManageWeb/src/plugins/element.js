@@ -1,5 +1,5 @@
 import Vue from 'vue'
-import { Button, Form, FormItem, Avatar, Input, Select, Option, Scrollbar, Collapse, CollapseItem, Message, Container, Header, Aside, Main, Menu, Submenu, MenuItemGroup, MenuItem, Row, Col, Card, Tabs, TabPane, Radio, RadioGroup, Slider, Switch, Badge } from 'element-ui'
+import { Button, Form, FormItem, Avatar, Input, Select, Table, TableColumn, DatePicker, Option, Scrollbar, Collapse, CollapseItem, Message, Container, Header, Aside, Main, Menu, Submenu, MenuItemGroup, MenuItem, Row, Col, Card, Tabs, TabPane, Radio, RadioGroup, Slider, Switch, Badge } from 'element-ui'
 
 Vue.use(Button)
 Vue.use(Form)
@@ -7,6 +7,9 @@ Vue.use(FormItem)
 Vue.use(Avatar)
 Vue.use(Input)
 Vue.use(Select)
+Vue.use(Table)
+Vue.use(TableColumn)
+Vue.use(DatePicker)
 Vue.use(Option)
 Vue.use(Scrollbar)
 Vue.use(Collapse)

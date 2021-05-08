@@ -2,9 +2,10 @@ import Vue from 'vue'
 import VueRouter from 'vue-router'
 import Login from '../components/Login.vue'
 import Nav from '../components/Nav.vue'
-import Home from '../components/Home.vue'
-import Foot from '../components/Foot.vue'
-import Message from '../components/Message.vue'
+import Travel from '../components/Travel.vue'
+import Postal from '../components/Postal.vue'
+import Train from '../components/Train.vue'
+
 Vue.use(VueRouter)
 
 const router = new VueRouter({
@@ -14,11 +15,11 @@ const router = new VueRouter({
     {
       path: '/nav',
       component: Nav,
-      redirect: '/home', // "导航"
+      redirect: '/travel', // "导航"
       children: [
-        { path: '/home', component: Home },
-        { path: '/foot', component: Foot },
-        { path: '/message', component: Message }
+        { path: '/travel', component: Travel },
+        { path: '/postal', component: Postal },
+        { path: '/train', component: Train }
       ]
     }
   ]

@@ -1,6 +1,6 @@
 <template>
     <!-- 导航栏 -->
-    <div>
+    <div class="container">
         <el-menu
         router
         :default-active="$route.path"
@@ -10,9 +10,9 @@
         background-color="#70a1ff"
         text-color="#fff"
         active-text-color="#862e9c">
-            <el-menu-item index="/home" style="margin-left: 60px">个人定制</el-menu-item>
-            <el-menu-item index="/foot">历史足迹</el-menu-item>
-            <el-menu-item index="/message">消息中心</el-menu-item>
+            <el-menu-item index="/travel" style="margin-left: 60px">旅游管理</el-menu-item>
+            <el-menu-item index="/postal">邮政编码</el-menu-item>
+            <el-menu-item index="/train">火车时刻</el-menu-item>
             <!-- 个人中心 -->
             <a href="javascript:void(0)"><el-avatar class="el-avatar" src="https://cube.elemecdn.com/0/88/03b0d39583f48206768a7534e55bcpng.png"></el-avatar></a>
         </el-menu>
@@ -34,8 +34,13 @@ export default {
 }
 </script>
 <style lang="less" scoped>
-.el-avatar{
-    float: right;
-    margin: 10px 60px 0 0;
+.container{
+  height: 100%;
+  width: 100%;
+  .el-avatar{
+      float: right;
+      margin: 10px 60px 0 0;
+  }
 }
+
 </style>

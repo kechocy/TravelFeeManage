@@ -71,11 +71,16 @@ export default {
       this.$refs.loginFormRef.validate(async valid => {
         if (!valid) return
         const { data: res } = await this.$http.post('user/login', this.loginForm)
-        if (this.loginForm.validcode !== this.trueValidCode) { return this.$message.error('验证码错误') } else if (res.meta.status === 404) { return this.$message.error('用户名或密码错误') } else if (res.meta.status === 200 && this.loginForm.validcode === this.trueValidCode) {
+        console.log(res)
+        if (this.loginForm.validcode !== this.trueValidCode) {
+          return this.$message.error('验证码错误')
+        } else if (res.meta.status === 404) {
+          return this.$message.error('用户名或密码错误')
+        } else if (res.meta.status === 200 && this.loginForm.validcode === this.trueValidCode) {
           this.$message.success('登录成功')
           window.sessionStorage.setItem('token', res.data.token)
           window.sessionStorage.setItem('userid', res.data.userid)
-          this.$router.push('/home')
+          this.$router.push('/travel')
         }
       })
     }
