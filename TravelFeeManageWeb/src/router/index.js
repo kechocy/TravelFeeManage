@@ -5,6 +5,7 @@ import Nav from '../components/Nav.vue'
 import Travel from '../components/Travel.vue'
 import Postal from '../components/Postal.vue'
 import Train from '../components/Train.vue'
+import Phone from '../components/Phone.vue'
 
 Vue.use(VueRouter)
 
@@ -19,7 +20,8 @@ const router = new VueRouter({
       children: [
         { path: '/travel', component: Travel },
         { path: '/postal', component: Postal },
-        { path: '/train', component: Train }
+        { path: '/train', component: Train },
+        { path: '/phone', component: Phone }
       ]
     }
   ]

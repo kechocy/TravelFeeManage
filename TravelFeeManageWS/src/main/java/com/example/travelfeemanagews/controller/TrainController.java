@@ -34,6 +34,7 @@ public class TrainController {
             response.append(inputLine);
         }
         in.close();
+        con.disconnect();
         ModelMap result=new ModelMap();
         result.put("response",response);
         return result;

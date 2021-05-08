@@ -127,7 +127,7 @@ export default {
             if (obj.data.length === 0) { _this.$message.error('暂无数据') } else {
               _this.tableData.splice(0, _this.tableData.length)
               for (var i = 0; i < obj.data.length; i++) {
-                _this.tableData.push({ trainNum: obj.data[i].车号, startCity: obj.data[i].起始站, endCity: obj.data[i].终到站, startTime: obj.data[i].发车时间, endTime: obj.data[i].到达时间, totalTime: obj.data[i].历时 })
+                _this.tableData.push({ trainNum: obj.data[i].train, startCity: obj.data[i].start_city, endCity: obj.data[i].end_city, startTime: obj.data[i].start_time, endTime: obj.data[i].end_time, totalTime: obj.data[i].total_time })
               }
             }
           })

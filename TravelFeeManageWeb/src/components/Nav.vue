@@ -13,6 +13,7 @@
             <el-menu-item index="/travel" style="margin-left: 60px">旅游管理</el-menu-item>
             <el-menu-item index="/postal">邮政编码</el-menu-item>
             <el-menu-item index="/train">火车时刻</el-menu-item>
+            <el-menu-item index="/phone">号码归属</el-menu-item>
             <!-- 个人中心 -->
             <a href="javascript:void(0)"><el-avatar class="el-avatar" src="https://cube.elemecdn.com/0/88/03b0d39583f48206768a7534e55bcpng.png"></el-avatar></a>
         </el-menu>

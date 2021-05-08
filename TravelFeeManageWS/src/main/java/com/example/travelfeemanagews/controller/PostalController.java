@@ -39,6 +39,7 @@ public class PostalController {
             response.append(inputLine);
         }
         in.close();
+        con.disconnect();
         ModelMap result=new ModelMap();
         result.put("response",response);
         return result;
