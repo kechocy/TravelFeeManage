@@ -1,4 +1,7 @@
+
+
 # TravelFeeManage
+
 使用spring boot开发的简单旅游开支管理接口，使用vue开发前端页面
 
 `TravelFeeManageWeb`目录下存放前端代码，`TravelFeeManageWs`目录下存放旅行开支管理后端接口代码
@@ -51,3 +54,7 @@
 | matter | varchar | 消费事项（不为空） |
 | spend | float | 消费金额（不为空） |
 | budgetid | int | 对应预算id（不为空,外键） |
+
+## 附加
+
+在原来界面基础上增加了几个界面，包括对邮编、火车时刻表、手机归属地的查询，调用接口源自网络，可能失效
